@@ -1,10 +1,10 @@
-🚢 Batalha Naval - Desafio Completo em C
+🚢 *Batalha Naval - Desafio Completo em C*
 
 Este meu projeto acadêmico implementa um tabuleiro de Batalha Naval em C, construído em três estágios de complexidade (Novato, Aventureiro e Mestre).
 
 O programa cria um tabuleiro 10x10, posiciona quatro navios com diferentes orientações (horizontal, vertical e diagonais) e, por fim, demonstra um sistema de habilidades especiais (Cone, Cruz e Octaedro), calculando e sobrepondo suas áreas de efeito no tabuleiro final.
 
-🎯 Funcionalidades Implementadas
+🎯 *Funcionalidades Implementadas*
 O código batalha_naval_completo.c inclui todas as funcionalidades dos três níveis:
 
 Tabuleiro 10x10: O jogo é baseado em uma matriz (array bidimensional) 10x10, inicializada com AGUA.
@@ -25,13 +25,13 @@ Lógica de Sobreposição (Overlay): O programa calcula como as áreas de efeito
 
 Visualização Clara: A saída final no console usa caracteres distintos para representar cada elemento, facilitando a visualização:
 
-~ : Água
+"~" : Água
 
-N : Navio
+"N" : Navio
 
-# : Área de Efeito de Habilidade
+"#" : Área de Efeito de Habilidade
 
-🖥️ Exemplo de Saída Final
+🖥️ *Exemplo de Saída Final*
 O resultado final do programa é o tabuleiro 10x10 com todos os navios posicionados e as áreas de habilidade sobrepostas.
 
 === TABULEIRO FINAL - BATALHA NAVAL MESTRE ===
@@ -64,7 +64,7 @@ Bash
 batalha_naval.exe
 O programa não requer nenhuma entrada do usuário; ele executará todos os passos e imprimirá o tabuleiro final automaticamente.
 
-🔧 Lógica do Código
+🔧 *Lógica do Código*
 Para atender aos requisitos dos desafios, o código foi estruturado da seguinte forma:
 
 1. Posicionamento de Navios (Níveis Novato e Aventureiro)
@@ -96,4 +96,4 @@ O cálculo target_L = cruz_orig_L + (i - centro) faz o "mapeamento", garantindo 
 
 Uma verificação final de limites garante que a habilidade não tente escrever fora da matriz 10x10 (ex: target_L >= 0 && target_L < 10).
 
-Feito por: Daniel Rodrigues.
+*Feito por: Daniel Rodrigues.*
