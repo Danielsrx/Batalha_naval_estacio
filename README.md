@@ -1,10 +1,11 @@
-🚢 *Batalha Naval - Desafio Completo em C*
+🚢 **Batalha Naval - Desafio Completo em C**
 
 Este meu projeto acadêmico implementa um tabuleiro de Batalha Naval em C, construído em três estágios de complexidade (Novato, Aventureiro e Mestre).
 
 O programa cria um tabuleiro 10x10, posiciona quatro navios com diferentes orientações (horizontal, vertical e diagonais) e, por fim, demonstra um sistema de habilidades especiais (Cone, Cruz e Octaedro), calculando e sobrepondo suas áreas de efeito no tabuleiro final.
 
-🎯 *Funcionalidades Implementadas*
+🎯 **Funcionalidades Implementadas**
+
 O código batalha_naval_completo.c inclui todas as funcionalidades dos três níveis:
 
 Tabuleiro 10x10: O jogo é baseado em uma matriz (array bidimensional) 10x10, inicializada com AGUA.
@@ -31,14 +32,16 @@ Visualização Clara: A saída final no console usa caracteres distintos para re
 
 "#" : Área de Efeito de Habilidade
 
-🖥️ *Exemplo de Saída Final*
+🖥️ **Exemplo de Saída Final**
+
 O resultado final do programa é o tabuleiro 10x10 com todos os navios posicionados e as áreas de habilidade sobrepostas.
 
 === TABULEIRO FINAL - BATALHA NAVAL MESTRE ===
 
 Legenda: [~] Agua  [N] Navio  [#] Habilidade
 
-🚀 Como Compilar e Executar
+🚀 **Como Compilar e Executar**
+
 Este programa foi escrito em C padrão e pode ser compilado com gcc (GNU C Compiler) ou qualquer compilador C compatível.
 
 Clone o Repositório (Se você já tem os arquivos, pule esta etapa.)
@@ -50,6 +53,7 @@ Compile o Programa Execute o seguinte comando no seu terminal para compilar o c�
 Bash
 
 gcc batalha_naval_completo.c -o batalha_naval
+
 Execute o Programa Após a compilação, execute o programa:
 
 No Linux ou macOS:
@@ -57,17 +61,21 @@ No Linux ou macOS:
 Bash
 
 ./batalha_naval
+
 No Windows:
 
 Bash
 
 batalha_naval.exe
+
 O programa não requer nenhuma entrada do usuário; ele executará todos os passos e imprimirá o tabuleiro final automaticamente.
 
-🔧 *Lógica do Código*
+🔧 **Lógica do Código**
+
 Para atender aos requisitos dos desafios, o código foi estruturado da seguinte forma:
 
 1. Posicionamento de Navios (Níveis Novato e Aventureiro)
+
 Cada navio tem suas coordenadas iniciais definidas.
 
 Uma flag (variável posicao_valida) é usada para rastrear se o posicionamento é legal.
@@ -77,6 +85,7 @@ Validação de Limites: O programa primeiro verifica se a posição final do nav
 Validação de Sobreposição: Se estiver dentro dos limites, um segundo loop varre as células-alvo no tabuleiro. Se qualquer célula-alvo já for NAVIO, a flag é desativada e o navio não é posicionado.
 
 2. Criação das Habilidades (Nível Mestre)
+
 As matrizes de habilidade 5x5 são geradas dinamicamente usando lógica condicional, com base na posição do centro (int centro = 2):
 
 Cone: A área é ativada se a coluna (j) estiver dentro do "alcance" da linha (i). A fórmula j >= centro - i && j <= centro + i cria um triângulo que se expande para baixo.
@@ -86,6 +95,7 @@ Cruz: A área é ativada se a célula estiver na linha central (i == centro) OU 
 Octaedro (Losango): A área é ativada usando a "Distância de Manhattan" do centro. A fórmula abs(i - centro) + abs(j - centro) <= centro cria um formato de losango perfeito.
 
 3. Sobreposição das Habilidades (Nível Mestre)
+
 Para cada habilidade, um ponto de origem (ex: cruz_orig_L, cruz_orig_C) é definido no tabuleiro 10x10.
 
 O programa percorre a matriz da habilidade 5x5.
