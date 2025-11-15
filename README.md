@@ -1,5 +1,6 @@
 🚢 Batalha Naval - Desafio Completo em C
-Este projeto acadêmico implementa um tabuleiro de Batalha Naval em C, construído em três estágios de complexidade (Novato, Aventureiro e Mestre).
+
+Este meu projeto acadêmico implementa um tabuleiro de Batalha Naval em C, construído em três estágios de complexidade (Novato, Aventureiro e Mestre).
 
 O programa cria um tabuleiro 10x10, posiciona quatro navios com diferentes orientações (horizontal, vertical e diagonais) e, por fim, demonstra um sistema de habilidades especiais (Cone, Cruz e Octaedro), calculando e sobrepondo suas áreas de efeito no tabuleiro final.
 
